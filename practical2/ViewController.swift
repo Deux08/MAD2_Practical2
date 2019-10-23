@@ -47,6 +47,17 @@ class ViewController: UIViewController {
         //Exercise 4
         print("\nExercise 4")
         print("----------")
+        var age = 0
+        let count = friendList.count
+        var average = 0
+        func findAverageAge() -> Double {
+            for friend in friendList{
+                age += friend.age
+                average = age/count
+            }
+            return Double(average)
+        }
+        print(findAverageAge())
         
     }
     
